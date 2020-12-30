@@ -1,0 +1,39 @@
+{
+  "name": "brief",
+  "version": "1.0.0",
+  "description": "Бриф для клиента",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andykrvua/brief.git"
+  },
+  "keywords": [
+    "brief",
+    "mern",
+    "react",
+    "mongo",
+    "express",
+    "node"
+  ],
+  "author": "Andrey Kalko <andrey.kallko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andykrvua/brief/issues"
+  },
+  "homepage": "https://github.com/Andykrvua/brief#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.0",
+    "mongoose": "^5.11.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
