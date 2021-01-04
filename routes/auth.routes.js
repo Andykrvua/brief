@@ -34,6 +34,7 @@ router.post(
 
       // search user with email
       const candidate = await User.findOne({ email });
+
       if (candidate) {
         return res.status(400).json({ message: 'Такой email уже существует' });
       }
@@ -43,6 +44,7 @@ router.post(
 
       // create user
       const user = new User({ email, password: hashedPassword });
+
       await user.save();
       res.status(201).json({ message: 'Пользователь успешно создан' });
     } catch (e) {
