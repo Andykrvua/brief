@@ -1,4 +1,5 @@
 {
   "port": 5000,
+  "jwtSecret": "brief secret key",
   "mongoUri": "mongodb+srv://brief:brief04011960@cluster0.5axx3.mongodb.net/brief?retryWrites=true&w=majority"
 }

@@ -9,6 +9,7 @@ const PORT = config.get('port') || 5000;
 
 async function start() {
   try {
+    // check db connection
     await mongoose.connect(config.get('mongoUri'), {
       // base param for connection
       useNewUrlParser: true,
@@ -16,11 +17,13 @@ async function start() {
       useCreateIndex: true,
     });
 
+    // listen port
     app.listen(PORT, () => {
       console.log(`App working! ${PORT}`);
     });
   } catch (e) {
     console.log('Server Error', e.message);
+    // end process if error
     process.exit(1);
   }
 }
